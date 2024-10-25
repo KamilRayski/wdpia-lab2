@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET and POST Requests</title>
+    <script src="./requests_async2.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+
+<div class="primary">
+    <h1>Send GET and POST Requests</h1>
+
+    <h2>GET Request</h2>
+    <label for="getInputField">Enter path for GET request:</label>
+    <input type="text" id="getInputField" placeholder="Enter path for GET request">
+    <button onclick="sendGetRequest()">Send GET Request</button>
+
+    <h3>GET Response:</h3>
+    <pre id="getResponse"></pre>
+
+    <hr>
+    <h2>POST Request</h2>
+    <label for="postNameField">Enter name for POST request:</label>
+    <input type="text" id="postNameField" placeholder="Enter name for POST request">
+    <button onclick="sendPostRequest()">Send POST Request</button>
+
+    <h3>POST Response:</h3>
+    <pre id="postResponse"></pre>
+</div>
+
+<hr>
+-->
+
+    <div class="container">
+        <div class="user-input">
+            <h1>Let's level up your brand, together</h1>
+        <form class="user-form" onsubmit="event.preventDefault(); addUser();">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected></option>
+                <option value="manager">Manager</option>
+                <option value="development-lead">Development Lead</option>
+                <option value="product-designer">Product Designer</option>
+                <option value="cto">CTO</option>
+            </select>
+            
+
+            <div class="privacy-policy">
+                <input type="checkbox" id="privacy-policy" required>
+                <label for="privacy-policy">You agree to our friendly <a href="#">privacy policy</a>.</label>
+            </div>
+
+            <button class="submit" type="submit">SUBMIT</button>
+        </form>
+        </div>
+        
+        <div class="user-list">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

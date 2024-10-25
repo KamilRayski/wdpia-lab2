@@ -1,0 +1,136 @@
+*.container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    margin: 20px;
+    border: 1px solid #d0d5dd ;
+    gap: 16px;
+
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #000;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.user-form input, .user-form select{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.privacy-policy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.privacy-policy input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.privacy-policy label a {
+    color:#666;
+    text-decoration: none;
+}
+
+.privacy-policy label a:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    padding: 10px;
+    background-color: #7559D9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color:#846CD9;
+}
+
+/* Styling for the user list */
+.user-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for individual user items */
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.user-item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.user-item span {
+    display: block;
+    color: #888;
+    font-size: 12px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #888;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.delete-btn img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
