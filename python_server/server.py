@@ -33,12 +33,6 @@ cursor = conn.cursor()
 
 
 class SimpleRequestHandler(BaseHTTPRequestHandler):
-    """user_list = [{
-        'first_name': 'Michal',
-        'last_name': 'Mucha',
-        'role': 'instructor',
-        'user_id': str(uuid.uuid4()) 
-    }]"""
 
     # Ustawienia nagłówków (w tym CORS)
     def _set_headers(self, status=200):
@@ -117,23 +111,6 @@ class SimpleRequestHandler(BaseHTTPRequestHandler):
         else:
             self._set_headers(200)
             self.wfile.write(json.dumps({"message": "User deleted successfully"}).encode())
-        """
-        user_found = False
-
-        # Szukanie użytkownika po user_id
-        for user in self.user_list:
-            if user['user_id'] == user_id:
-                self.user_list.remove(user)
-                user_found = True
-                break
-
-        if not user_found:
-            self._set_headers(404)
-            self.wfile.write(json.dumps({"error": "User not found"}).encode())
-        else:
-            self._set_headers(200)
-            self.wfile.write(json.dumps({"message": "User deleted successfully"}).encode())
-        """
 
 
     # Obsługa metody OPTIONS (CORS)
